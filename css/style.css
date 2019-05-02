@@ -1,5 +1,11 @@
-body {
+html {
   font-size: 14px; }
+
+/*body{
+    font-family: 
+}*/
+img {
+  max-width: 100%; }
 
 h1 {
   font-size: 1.5rem; }
