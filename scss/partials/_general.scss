@@ -1,5 +1,50 @@
 
+//********************************************
+//Custom colors were added through Bootstrap, thus gaining several options (ex. background, fonmt color...)
+//********************************************
 
-/*body{
-    font-size: 16px;
-}*/
+body{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.3125rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+
+//********************************************
+//LG BREAKPOINT
+//********************************************
+@media(min-width: 992px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 2.1875rem;
+    }
+
+    h3{
+        font-size: 1.75rem;
+    }
+    
+    h4{
+        font-size: 1.5rem;
+    }
+    
+    h5{
+        font-size: 1.3125rem;
+    }
+    
+    h6{
+        font-size: 1rem;
+    }
+}//**********************

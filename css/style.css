@@ -1,5 +1,38 @@
-/*body{
-    font-size: 16px;
-}*/
+body {
+  font-size: 14px; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h2 {
+  font-size: 1.3125rem; }
+
+h3 {
+  font-size: 1rem; }
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem; }
+
+  h2 {
+    font-size: 2.1875rem; }
+
+  h3 {
+    font-size: 1.75rem; }
+
+  h4 {
+    font-size: 1.5rem; }
+
+  h5 {
+    font-size: 1.3125rem; }
+
+  h6 {
+    font-size: 1rem; } }
+/*@import "theme/_fonts.scss";
+@import "theme/_varibles-theme.scss";
+@import "theme/_base.scss";
+@import "theme/_animations.scss";
+@import "theme/_form.scss";
+@import "theme/_header.scss";*/
 
 /*# sourceMappingURL=style.css.map */
