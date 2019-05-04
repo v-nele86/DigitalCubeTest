@@ -5,8 +5,10 @@
 @import "_mixins.scss";
 
 //THEME COMPONENTS
+@import "partials/_variables-style.scss";
 @import "partials/_general.scss";
 @import "partials/_header.scss";
+@import "partials/_lead-section.scss";
 /*@import "theme/_fonts.scss";
 @import "theme/_varibles-theme.scss";
 @import "theme/_base.scss";
