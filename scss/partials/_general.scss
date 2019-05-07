@@ -38,7 +38,12 @@ h3{
 }
 
 .intersection-line{
-    
+    position: absolute;
+    width: 1px;
+    height: 200px;
+    background: #000;
+    left: 50%;
+    top: 95%;
 }
 
 
@@ -69,4 +74,14 @@ h3{
     h6{
         font-size: 1rem;
     }
+    .intersection-line{
+        width: 2px;
+        height: 200px;
+        background: lightgray;
+        left: 72%;
+        top: 105%;
+    }
+    
+    
+    
 }//**********************

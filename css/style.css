@@ -25,6 +25,14 @@ h2 {
 h3 {
   font-size: 1rem; }
 
+.intersection-line {
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  background: #000;
+  left: 50%;
+  top: 95%; }
+
 @media (min-width: 768px) {
   h1 {
     font-size: 2.5rem; }
@@ -42,13 +50,43 @@ h3 {
     font-size: 1.3125rem; }
 
   h6 {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  .intersection-line {
+    width: 2px;
+    height: 200px;
+    background: lightgray;
+    left: 72%;
+    top: 105%; } }
 header .header-nav {
   padding: 12px 0 48px; }
 
-.lead .lead-item {
-  padding: 25px; }
+.lead {
+  padding-bottom: 300px; }
+  .lead .lead-item {
+    padding: 25px; }
+  .lead .row-wrapper {
+    position: relative; }
 
+@media (min-width: 992px) {
+  .lead .lead-item.bg-dark-purple {
+    height: 50% !important; } }
+.about {
+  margin-bottom: 80px; }
+  .about .about-description {
+    margin-bottom: 50px; }
+  .about .about-image {
+    max-width: 80%; }
+
+@media (min-width: 450px) {
+  .about .about-description {
+    margin-bottom: 80px; } }
+@media (min-width: 576px) {
+  .about .about-image {
+    max-width: 60%; } }
+@media (min-width: 992px) {
+  .about {
+    margin-bottom: 100px; } }
 /*@import "theme/_fonts.scss";
 @import "theme/_varibles-theme.scss";
 @import "theme/_base.scss";
