@@ -1,0 +1,79 @@
+
+.services{
+    
+    .services-wrapper{
+        padding: 75px 0 75px;
+        max-width: 85%;
+        
+        .services-title{
+            font-weight: bold;
+            color: $custom-dark-blue;
+            margin-bottom: 45px;
+        }
+        
+        .services-link-desktop{
+            color: $white;
+        }
+        
+        .services-image{
+            margin-bottom: 45px;
+            
+        }
+        
+        .services-link-mobile{
+            color: $white;
+            
+        }
+    }
+    
+}
+
+
+
+
+//********************************************
+//SS BREAKPOINT
+//********************************************
+@media(min-width: 450px){
+    
+    .services{
+        
+        .services-wrapper{
+            max-width: 80%;
+            
+        }
+        
+    }
+}//**********************
+
+//********************************************
+//MD BREAKPOINT
+//********************************************
+@media(min-width: 768px){
+    
+    .services{
+        
+        .services-wrapper{
+            max-width: 70%;
+            
+        }
+        
+    }
+    
+}//**********************
+
+//********************************************
+//LG BREAKPOINT
+//********************************************
+@media(min-width: 992px){
+    
+    .services{
+        
+        .services-wrapper{
+            max-width: 60%;
+            
+        }
+        
+    }
+    
+}//**********************

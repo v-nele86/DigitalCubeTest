@@ -23,17 +23,36 @@
 
 
     <body>
-
         <!--***************************HEADER START***************************-->
         <header>
 
             <div class="container">
                 <nav class="header-nav d-flex align-items-center justify-content-between px-3">
                     <div class="nav-brand">
-                        <img src="images/Group 19.png" alt="Brand photo"/>
+                        <a href="#" class="nav-brand-link">
+                            <img src="images/Group 19.png" alt="Brand photo"/>
+                        </a>
                     </div>
+
                     <div class="menu-button">
                         <img src="images/Group 28.png" alt="Menu button"/>
+                    </div>
+
+                    <div class="main-menu-wrapper">
+                        <h1 class="main-menu-title font-weight-bold">Menu</h1>
+                        <nav class="main-menu">
+                            <ul class="list-unstyled">
+                                <li class="main-menu-item">
+                                    <a href="#about" class="main-menu-link font-weight-bold text-decoration-none">Title 1</a>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a href="#testimonials" class="main-menu-link font-weight-bold text-decoration-none">Title 2</a>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a href="#services" class="main-menu-link font-weight-bold text-decoration-none">Title 3</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </nav>
             </div>
@@ -42,7 +61,7 @@
         <!--**************************MAIN START**************************-->
         <main>
             <!-------------------Lead section start------------------->
-            <section class="lead">
+            <section id="lead" class="lead">
                 <div class="container">
                     <div class="row-wrapper">
                         <!--First grid system-->
@@ -128,16 +147,12 @@
                         <!--Vertical line between sections-->
                         <div class="intersection-line"></div>
                     </div>
-
                 </div>
-
             </section><!-------------------Lead section end------------------->
-
-
             <!-------------------About section start------------------->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
-                    <article class="about-content bg-light-purple text-center px-4 py-5">
+                    <article class="about-content bg-light-purple text-center">
                         <h1 class="about-title font-weight-bold text-yellow mb-4 mb-lg-5">Title 1</h1>
                         <div class="row align-items-center">
                             <div class="col-lg-6 order-lg-last">
@@ -151,84 +166,218 @@
                                 </figure>
                             </div>
                         </div>
+                        <div class="intersection-line"></div>
                     </article>
                 </div>
-
-
-
             </section><!-------------------About section end------------------->
-
-
-
-            <section class="testimonials bg-light-blue text-center">
-
+            <!-------------------Testimonials section start------------------->
+            <section id="testimonials" class="testimonials bg-light-blue text-center">
                 <div class="container">
-                    <h1 class="about-section-title text-dark-blue font-weight-bold">Title 2</h1>
-                </div>
-                <div class="testimonials-wrapper">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-4">
-                            <article class="testimonials-item">
-                                <figure class="testimonials-image">
-                                    <img src="images/Group 15.png" alt=""/>
-                                </figure>
-                                <h3 class="testimonials-title text-custom-dark-gray">Vehicula iaculis</h3>
-                                <p class="testimonials-description text-custom-dark-gray">
-                                    nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
-                                </p>
-                            </article>
-                        </div>
-                        <div class="col-lg-4">
-                            <article class="testimonials-item">
-                                <figure class="testimonials-image">
-                                    <img src="images/Group 16.png" alt=""/>
-                                </figure>
-                                <h3 class="testimonials-title text-custom-dark-gray">Velit felis</h3>
-                                <p class="testimonials-description text-custom-dark-gray">
-                                    nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
-                                </p>
-                            </article>
-                        </div>
-                        <div class="col-lg-4">
-                            <article class="testimonials-item">
-                                <figure class="testimonials-image">
-                                    <img src="images/Group 17.png" alt=""/>
-                                </figure>
-                                <h3 class="testimonials-title text-custom-dark-gray">Cras fingilla</h3>
-                                <p class="testimonials-description text-custom-dark-gray">
-                                    nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
-                                </p>
-                            </article>
+                    <div class="testimonials-wrapper">
+                        <h1 class="testimonials-section-title text-dark-blue font-weight-bold">Title 2</h1>
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4">
+                                <article class="testimonials-item mx-auto mb-lg-0">
+                                    <figure class="testimonials-image  mx-auto">
+                                        <img src="images/Group 15.png" alt=""/>
+                                    </figure>
+                                    <h3 class="testimonials-title mb-lg-0 font-weight-bold">Vehicula iaculis</h3>
+                                    <p class="testimonials-description text-custom-dark-gray d-lg-none">
+                                        nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="col-lg-4">
+                                <article class="testimonials-item mx-auto mb-lg-0">
+                                    <figure class="testimonials-image  mx-auto">
+                                        <img src="images/Group 16.png" alt=""/>
+                                    </figure>
+                                    <h3 class="testimonials-title mb-lg-0 font-weight-bold">Velit felis</h3>
+                                    <p class="testimonials-description text-custom-dark-gray d-lg-none">
+                                        nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="col-lg-4">
+                                <article class="testimonials-item mx-auto mb-lg-0">
+                                    <figure class="testimonials-image  mx-auto">
+                                        <img src="images/Group 17.png" alt=""/>
+                                    </figure>
+                                    <h3 class="testimonials-title mb-lg-0  font-weight-bold">Cras fingilla</h3>
+                                    <p class="testimonials-description text-custom-dark-gray d-lg-none">
+                                        nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
+                                    </p>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
-            </section>
-
-
-
-            <section class="services">
-
-
-
-            </section>
-
-
-
-
+            </section><!-------------------Testimonials section end------------------->
+            <!-------------------Testimonials-after section start, for description paragraphs on LG------------------->
+            <section class="testimonials-after text-center  d-none d-lg-block">
+                <div class="container">
+                    <div class="testimonials-after-wrapper">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4">
+                                <p class="testimonials-description text-custom-dark-gray mx-auto">
+                                    nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="testimonials-description text-custom-dark-gray mx-auto">
+                                    nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="testimonials-description text-custom-dark-gray mx-auto">
+                                    nrenarugyb dfshkl uhbsdclr ehbslushbhd rlrdjnnhk ngdskj hgsk sdgkdg sdg sdjb sdg sdgdjb adsj asd j
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-after-border-bottom mx-auto"></div>
+                </div>
+            </section><!-------------------Testimonials-after section start, for description paragraphs on LG------------------->
+            <!-------------------Services section start------------------->
+            <section id="services" class="services">
+                <div class="container">
+                    <div class="services-wrapper text-center text-lg-left mx-auto">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h1 class="services-title">Nullam pellentesque purus eu neque</h1>
+                                <a href="#" class="services-link-desktop btn btn-red d-none d-lg-inline-block px-4 py-3 rounded-0 font-weight-bold">Tabernam</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <figure class="services-image">
+                                    <img src="images/Group 18.png" alt="Services photo"/>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="services-link-wrapper">
+                                    <a class="services-link-mobile btn btn-red d-lg-none  px-4 py-3 font-weight-bold">Tabernam</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-------------------Services section end------------------->
         </main><!--***************************MAIN END***************************-->
-
-
-
-
-
-
-
-
-
-
+        <!--***************************FOOTER END***************************-->
+        <footer class="bg-dark-blue">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 order-lg-last">
+                            <form class="footer-form mb-lg-0">
+                                <p class="footer-form-label font-weight-bold">Have question?</p>
+                                <textarea class="footer-textarea w-100 p-2 border-0"></textarea>
+                                <div class="footer-button-wrapper d-flex">
+                                    <button type="submit" class="ml-auto footer-button btn btn-yellow font-weight-bold">Submittere</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <nav class="footer-social d-flex justify-content-center align-items-center">
+                                <p class="footer-social-reference font-weight-bold">Contact us:</p>
+                                <figure class="footer-social-icon">
+                                    <a href="#" class="footer-social-link">
+                                        <img src="images/gmail.png" alt=""/>
+                                    </a>
+                                </figure>
+                                <figure class="footer-social-icon">
+                                    <a href="#" class="footer-social-link">
+                                        <img src="images/instagram-new.png" alt=""/>
+                                    </a>
+                                </figure>
+                                <figure class="footer-social-icon">
+                                    <a href="#" class="footer-social-link">
+                                        <img src="images/linkedin.png" alt=""/>
+                                    </a>
+                                </figure>
+                                <figure class="footer-social-icon">
+                                    <a href="#" class="footer-social-link">
+                                        <img src="images/twitter.png" alt=""/>
+                                    </a>
+                                </figure>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-5 d-none d-lg-block">
+                            <article class="footer-contact">
+                                <nav class="footer-contact-social d-flex align-items-center">
+                                    <p class="footer-social-reference font-weight-bold">Contact us:</p>
+                                    <figure class="footer-social-icon">
+                                        <a href="#" class="footer-social-link">
+                                            <img src="images/gmail.png" alt=""/>
+                                        </a>
+                                    </figure>
+                                    <figure class="footer-social-icon">
+                                        <a href="#" class="footer-social-link">
+                                            <img src="images/instagram-new.png" alt=""/>
+                                        </a>
+                                    </figure>
+                                    <figure class="footer-social-icon">
+                                        <a href="#" class="footer-social-link">
+                                            <img src="images/linkedin.png" alt=""/>
+                                        </a>
+                                    </figure>
+                                    <figure class="footer-social-icon">
+                                        <a href="#" class="footer-social-link">
+                                            <img src="images/twitter.png" alt=""/>
+                                        </a>
+                                    </figure>
+                                </nav>
+                                <div class="footer-contact-adress font-weight-bold">
+                                    <p class="footer-contact-adress-label">Adress:</p>
+                                    <p class="footer-contact-adress-content">
+                                        9003 Schoolhouse Court 
+                                        <br>
+                                        Astoria, NY 11102 
+                                    </p>
+                                    <p class="footer-contact-adress-content">
+                                        583 Delaware Avenue 
+                                        <br>
+                                        Redford, MI 48239 
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4 d-none d-lg-block">
+                            <nav class="footer-menu">
+                                <ul class="list-unstyled">
+                                    <li class="footer-menu-item">
+                                        <a href="#" class="footer-menu-link font-weight-bold text-decoration-none">
+                                            De nobis
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#" class="footer-menu-link font-weight-bold text-decoration-none">
+                                            Vitae
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#" class="footer-menu-link font-weight-bold text-decoration-none">
+                                            Tabernam
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#" class="footer-menu-link font-weight-bold text-decoration-none">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#" class="footer-menu-link font-weight-bold text-decoration-none">
+                                            Consilio
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!--***************************FOOTER END***************************-->
+        <div class="main-menu-overlay"></div>
+        <!--***************************SCRIPTS START***************************-->
         <!--First jquery, then popper and finaly bootstrap-->
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/popper.js" type="text/javascript"></script>
