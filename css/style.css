@@ -26,7 +26,7 @@ h2 {
 h3 {
   font-size: 1rem; }
 
-.intersection-line {
+.intersection-line-mobile {
   position: absolute;
   width: 1px;
   background: #000;
@@ -34,6 +34,11 @@ h3 {
   height: 100px;
   bottom: -85px;
   z-index: 10; }
+
+.intersection-line-desktop {
+  position: absolute;
+  width: 2px;
+  background: lightgray; }
 
 .main-menu-overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -62,16 +67,9 @@ h3 {
     font-size: 1.3125rem; }
 
   h6 {
-    font-size: 1rem; }
-
-  .intersection-line {
-    width: 2px;
-    height: 200px;
-    background: lightgray;
-    left: 72%;
-    top: 105%; } }
+    font-size: 1rem; } }
 header .header-nav {
-  padding: 12px 0 48px; }
+  padding: 20px 0 60px; }
   header .header-nav .main-menu-wrapper {
     background: #fff;
     padding: 50px 20px 0 50px;
@@ -100,12 +98,29 @@ header .header-nav {
   margin-bottom: 70px; }
   .lead .lead-item {
     padding: 25px; }
-  .lead .row-wrapper {
+    .lead .lead-item.bg-red .lead-item-prepend {
+      color: #f20109; }
+    .lead .lead-item.bg-blue .lead-item-prepend {
+      color: #0049c2; }
+    .lead .lead-item.bg-dark-purple .lead-item-prepend {
+      color: #442c86; }
+    .lead .lead-item.bg-yellow .lead-item-prepend {
+      color: #997f00; }
+    .lead .lead-item .lead-item-prepend {
+      margin-bottom: 5px; }
+    .lead .lead-item .lead-item-append {
+      justify-content: flex-end;
+      text-decoration: underline; }
+  .lead .lead-wrapper {
     position: relative; }
+  .lead .intersection-line-desktop {
+    height: 100px;
+    right: 28%;
+    bottom: -110px; }
 
 @media (min-width: 992px) {
-  .lead .lead-item.bg-dark-purple {
-    height: 50% !important; } }
+  .lead {
+    margin-bottom: 100px; } }
 .about {
   margin-bottom: 70px; }
   .about .about-content {
@@ -115,10 +130,11 @@ header .header-nav {
     margin-bottom: 50px; }
   .about .about-image {
     max-width: 80%; }
+  .about .intersection-line-desktop {
+    height: 70px;
+    left: 50%;
+    bottom: -85px; }
 
-@media (min-width: 450px) {
-  .about .about-description {
-    margin-bottom: 80px; } }
 @media (min-width: 576px) {
   .about .about-image {
     max-width: 60%; } }

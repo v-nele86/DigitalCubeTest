@@ -14,6 +14,14 @@ $custom-dark-gray: rgba(0,0,0,0.6);
 //-item-red-paragraph-color: darken($$custom-red, 50%);
 
 //********************************HEADER GENERAL STYLE********************************//
-$header-nav-padd-top: 12px;
-$header-nav-padd-bottom: 48px;
+$header-nav-padd-top: 20px;
+$header-nav-padd-bottom: 60px;
 
+
+//********************************MAIN GENERAL STYLE********************************//
+
+//*****LEAD SECTION*****
+$custom-red-darken: darken($custom-red, 20%);
+$custom-blue-darken: darken($custom-blue, 20%);
+$custom-purple-darken: darken($custom-dark-purple, 20%);
+$custom-yellow-darken: darken($custom-yellow, 20%);

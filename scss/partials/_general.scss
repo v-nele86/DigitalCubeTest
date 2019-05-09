@@ -38,7 +38,7 @@ h3{
     font-size: 1rem;
 }
 
-.intersection-line{
+.intersection-line-mobile{
     position: absolute;
     width: 1px;
     background: #000;
@@ -46,6 +46,15 @@ h3{
     height: 100px;
     bottom: -85px;
     z-index: 10;
+}
+
+.intersection-line-desktop{
+    position: absolute;
+    width: 2px;
+    //height: 110px;
+    background: lightgray;
+    //right: 28%;
+    //bottom: -110px;
 }
 
 .main-menu-overlay{
@@ -87,13 +96,7 @@ h3{
     h6{
         font-size: 1rem;
     }
-    .intersection-line{
-        width: 2px;
-        height: 200px;
-        background: lightgray;
-        left: 72%;
-        top: 105%;
-    }
+    
     
     
     

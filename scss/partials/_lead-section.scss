@@ -2,29 +2,61 @@
 .lead{
     margin-bottom: 70px;
     
+    .lead-flex-holder{
+        //width: 100%;
+    }
+    
     .lead-item{
         padding: 25px;
         
+        &.bg-red{
+            .lead-item-prepend{
+                color: $custom-red-darken;
+            }
+        }
+        &.bg-blue{
+            .lead-item-prepend{
+                color: $custom-blue-darken;
+            }
+        }
+        &.bg-dark-purple{
+            .lead-item-prepend{
+                color: $custom-purple-darken;
+            }
+        }
+        &.bg-yellow{
+            .lead-item-prepend{
+                color: $custom-yellow-darken;
+            }
+        }
+        
+        .lead-item-prepend{
+            margin-bottom: 5px;
+        }
+        
+        .lead-item-append{
+            justify-content: flex-end;
+            text-decoration: underline;
+        }
         
     }
-    .row-wrapper{
+    .lead-wrapper{
         position: relative;
     }
     
+    .intersection-line-desktop{
+        height: 100px;
+        right: 28%;
+        bottom: -110px;
+    }
     
     
-    
-}
-
-
-//********************************************
+}//********************************************
 //LG BREAKPOINT
 //********************************************
 @media(min-width: 992px){
     .lead{
-        .lead-item.bg-dark-purple{
-            height: 50% !important;
-        }
+        margin-bottom: 100px;
     }
     
     
